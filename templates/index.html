@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>index page</title>
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+	<style>
+		body {text-align: center;}
+		h1 {background-color: #00ffff;}
+	</style>
+</head>
+<body>
+	<form method= "POST">
+		<h2>
+			ENTER URL : <input type="text" name="url" /> 
+		</h2>
+		<!--<input type="submit" value="submit" />-->
+		<button type="submit" class="btn btn-warning">SUBMIT</button>
+
+	</form>
+	
+	{% if short_url != None %}
+		<h1> your short url is <h2>{{short_url }}</h2> </h1>
+	{% endif %}
+
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+
+</body>
+</html>
